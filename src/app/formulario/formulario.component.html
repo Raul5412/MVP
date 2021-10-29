@@ -1,0 +1,91 @@
+<div class="container center">
+    <div class="row">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Formulario</span>
+                <p>Llena este formulario que nos permitirá saber tu información y así poder contactarte para más información en futuras promociones por tus productos comprados. Gracias por su preferencia. </p>
+                <div class="row" id="uno" style="display: block;">
+                    <div class="input-field" style="width: 50%; margin-left: 25%;">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="nombre" type="text" class="validate">
+                        <label for="nombre">Nombre(s)</label>
+                    </div>
+                    <div class="input-field" style="width: 50%; margin-left: 25%;">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="ape_pat" type="text" class="validate">
+                        <label for="ape_pat">Apellido paterno</label>
+                    </div>
+                    <div class="input-field" style="width: 50%; margin-left: 25%;">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="ape_mat" type="text" class="validate">
+                        <label for="ape_mat">Apellido materno</label>
+                    </div>
+                    <div class="input-field" style="width: 50%; margin-left: 25%;">
+                        <i class="material-icons prefix">star_border</i>
+                        <input id="edad" type="number" class="validate">
+                        <label for="edad">Edad</label>
+                    </div>
+                </div>
+                <div class="row" id="dos" style="display: none;">
+                    <div class="input-field" style="width: 50%; margin-left: 25%;">
+                        <i class="material-icons prefix">contact_mail</i>
+                        <input id="correo" type="email" class="validate">
+                        <label for="correo">Correo</label>
+                    </div>
+                    <div class="input-field" style="width: 50%; margin-left: 25%;">
+                        <i class="material-icons prefix">contact_phone</i>
+                        <input id="numero" type="text" class="validate">
+                        <label for="numero">Número telefónico</label>
+                    </div>
+                    <div class="input-field" style="width: 50%; margin-left: 25%;">
+                        <i class="material-icons prefix">store</i>
+                        <input id="tienda" type="text" class="validate">
+                        <label for="tienda">Tienda</label>
+                    </div>
+                    <div class="input-field" style="width: 50%; margin-left: 25%;">
+                        <i class="material-icons prefix">local_grocery_store</i>
+                        <input id="tipo" type="text" class="validate">
+                        <label for="tipo">Tipo de producto</label>
+                    </div>
+                </div>
+                <div class="row" id="tres" style="display: none;">
+                    <div class="input-field" style="width: 50%; margin-left: 25%;">
+                        <i class="material-icons prefix">local_grocery_store</i>
+                        <input id="producto" type="text" class="validate">
+                        <label for="producto">Nombre del producto</label>
+                    </div>
+                    <div class="input-field" style="width: 50%; margin-left: 25%;">
+                        <i class="material-icons prefix">format_list_numbered</i>
+                        <input id="unidades" type="number" class="validate">
+                        <label for="unidades">Unidades</label>
+                    </div>
+                    <div class="input-field" style="width: 50%; margin-left: 25%;">
+                        <i class="material-icons prefix">textsms</i>
+                        <input id="comentarios" type="text" class="validate">
+                        <label for="comentarios">Comentarios</label>
+                    </div>
+                </div>
+                <div class="row" id="cuatro" style="display: none;">
+                    <p>Gracias por contestar la encuesta. Regresa pronto</p>
+                    <button class="btn waves-effect waves-light" name="action" (click)="enviar($event)">Enviar
+                        <i class="material-icons right">send</i>
+                      </button>
+                </div>
+
+            </div>
+            <div class="card-action center">
+                <ul class="pagination">
+                    <button class="btn waves-effect waves-light" (click)="back()">
+                        <i class="material-icons">chevron_left</i>
+                    </button>
+                    <li class="waves-effect" id="1" style="background-color: white;"><a href="#!">1</a></li>
+                    <li class="waves-effect" id="2" style="background-color: grey;"><a href="#!">2</a></li>
+                    <li class="waves-effect" id="3" style="background-color: grey;"><a href="#!">3</a></li>
+                    <button class="btn waves-effect waves-light" (click)="next()">
+                        <i class="material-icons">chevron_right</i>
+                    </button>
+                  </ul>
+            </div>
+          </div>
+    </div>
+</div>
